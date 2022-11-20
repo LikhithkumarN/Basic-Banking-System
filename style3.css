@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ 
+ #landingpage{
+
+    position: absolute;
+    width: 1440px;
+
+    
+    
+  }
+
+
+body{
+    background-color: rgb(200, 168, 246);
+}
+
+
+#landingpage{
+    position: relative;
+    width: 1440px; 
+    background-color: rgb(122, 79, );
+}
+
+
+
+#users{
+    position:relative;
+    width: 50px;
+    height: 20px;
+    left: 570px;
+    top: 250px;
+    bottom:-150px; 
+    background-color: rgb(189,229,229);
+    color: #0E0E0E;
+ 
+}
+
+#money{
+    position:relative;
+    width: 200px;
+    height: 45px;
+    left: 550px;
+    top: 300px;
+    bottom: -20px;
+    background: #BDE5E5;
+    color: #0E0E0E;
+
+     border-radius: 15px;
+}
+
+
+
+
+#submit{
+    position: relative;
+    left: 400px;
+    top: 400px;
+    font-size: 1.0em;
+    font-family: sans-serif;
+    min-width: 60px;
+   border-radius: 20px;
+   background-color: darkorange;
+  
+}
+#submit:hover{
+    cursor: pointer;
+}
+
+
+
+#home{
+    position: relative;
+    width: 89px;
+    height: 25px;
+    left: 1250px;
+    top: -60px;
+    border-radius: 20px;
+    background: #BDE5E5;
+    color: #0E0E0E;
+}
+
+#home:hover{
+    cursor: pointer;
+}
+
+#customers{
+    position: relative;
+    width: 135px;
+    height: 25px;
+    left: 1355px;
+    top: -85px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+    color: #0E0E0E;
+
+    border-radius: 20px;
+    }
+
+    #customers:hover{
+        cursor: pointer;
+    }

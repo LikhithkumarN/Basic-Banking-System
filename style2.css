@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ 
+ #landingpage{
+
+    position: absolute;
+    width: 1440px;
+
+  background-color: cyan; 
+    
+    
+  }
+body{
+    background-color: rgb(200, 168, 246);
+}
+
+
+
+
+
+
+
+
+
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    border-radius: 20px;
+}
+
+.styled-table thead tr {
+    background-color: #4c776e;
+    color: #ffffff;
+    text-align: left;
+    border-radius: 20px;
+}
+
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+#home{
+    position: absolute;
+    width: 85px;
+    height: 25px;
+    left: 1170px;
+    top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    
+    background: #BDE5E5;
+    color: #0E0E0E;
+
+    border-radius: 20px;
+}
+
+#home:hover{
+    cursor: pointer;
+}
+
+
+
+#transfer{
+    position: absolute;
+    width: 147px;
+    height: 25px;
+    left: 1130px;
+    top: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+    color: #0E0E0E;
+
+    border-radius: 20px;
+
+}
+
+#transfer:hover{
+    cursor: pointer;
+}
+
+#history{
+    position: absolute;
+    width: 174px;
+    height: 25px;
+    left: 1295px;
+    top: 15px;
+
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+color: #0E0E0E;
+
+}
+
+#history:hover{
+    cursor: pointer;
+}
+
+
+#transferb{
+
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5; 
+}
+
+#transferb:hover{
+    cursor: pointer;
+}
+
+#transferb1{
+    position: absolute;
+left: 1040px;
+    top: 155px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb1:hover{
+    cursor: pointer;
+}
+
+#transferb2{
+    position: absolute;
+left: 1040px;
+    top: 197px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb2:hover{
+    cursor: pointer;
+}
+
+#transferb3{
+    position: absolute;
+left: 1040px;
+    top: 239px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb3:hover{
+    cursor: pointer;
+}
+
+#transferb4{
+    position: absolute;
+left: 1040px;
+    top: 281px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb4:hover{
+    cursor: pointer;
+}
+
+#transferb5{
+    position: absolute;
+left: 1040px;
+    top: 323px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb5:hover{
+    cursor: pointer;
+}
+
+#transferb6{
+    position: absolute;
+left: 1040px;
+    top: 365px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb6:hover{
+    cursor: pointer;
+}
+
+#transferb7{
+    position: absolute;
+left: 1040px;
+    top: 407px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb7:hover{
+    cursor: pointer;
+}
+
+#transferb8{
+    position: absolute;
+left: 1040px;
+    top: 449px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb8:hover{
+    cursor: pointer;
+}
+
+#transferb9{
+    position: absolute;
+left: 1040px;
+    top: 491px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb9:hover{
+    cursor: pointer;
+}
+
+
+#transferb10{
+    position: absolute;
+left: 1040px;
+    top: 533px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb10:hover{
+    cursor: pointer;
+}
+
+#transferb11{
+    position: absolute;
+left: 1040px;
+    top: 575px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb11:hover{
+    cursor: pointer;
+}
+
+#transferb12{
+    position: absolute;
+left: 1040px;
+    top: 617px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb12:hover{
+    cursor: pointer;
+}
+
+#transferb13{
+    position: absolute;
+left: 1040px;
+    top: 659px;
+    border-radius: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    background: #BDE5E5;
+
+}
+
+#transferb13:hover{
+    cursor: pointer;
+}
+
+
+
+
