@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="buttonsection">
+
+        <button onclick="location.href='index1.html'" type="button" id="home">Home</button>
+        
+    </div>
+
+
+
+
+    <table class="styled-table" id="table">
+        <thead>
+            <tr>
+                <th>from</th>
+                <th>amount</th>
+                <th>to</th>
+                <th>time</th>
+            </tr>
+        </thead>
+
+
+
+        <tbody>
+            <script>
+                let Data;
+                const transactionDetails = localStorage.getItem("transactionDetails")
+
+                if (transactionDetails) {
+                    Data = JSON.parse(transactionDetails)
+                }else{
+                    alert("sorry there are no transactions")
+                    location.href="index2.html"
+                }
+
+                const table = document.getElementById("table")
+
+
+                Data && Data?.map((customer) => {
+                    const tablerow = document.createElement("tr")
+                    const tablerowforname = document.createElement("td");
+                    tablerowforname.innerText = customer.from
+                    const tablerowforemail = document.createElement("td")
+                    tablerowforemail.innerText = customer.to;
+                    const tablerowforacnum = document.createElement("td")
+                    tablerowforacnum.innerText = customer.amount;
+                    const tablerowforbalance = document.createElement("td")
+                    tablerowforbalance.innerText = customer.time;
+                    
+                  
+                    tablerow.appendChild(tablerowforname)
+                    tablerow.appendChild(tablerowforacnum)
+                    tablerow.appendChild(tablerowforemail)
+                    tablerow.appendChild(tablerowforbalance)
+                    table.appendChild(tablerow)
+                })
+
+            </script>
+
+        </tbody>
+    </table>
+
+
+
+</body>
+
+</html>

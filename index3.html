@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+<head>
+     <script>
+        function transfer() {
+            const loc = new URLSearchParams(window.location.search);
+            const fromemail = loc.get('email');
+            let customers = localStorage.getItem("customerDetails")
+
+            if (customers) {
+                customers = JSON.parse(customers)
+            }
+
+            const amounttotransfer = document.getElementById("money").value;
+            let toname;
+
+            for (var option of document.getElementById('custmerselect').options) {
+                if (option.selected) {
+                    toname = option.value;
+                }
+            }
+            customers.forEach(customer => {
+                if (fromemail == customer.email && customer.balance - amounttotransfer < 0) {
+                    alert("transaction cannot be done! check balance")
+                } else if (fromemail == customer.email) {
+                    customer.balance -= amounttotransfer;
+                }
+            });
+            customers.forEach(cust => {
+                if (toname == cust.name) {
+                    cust.balance += parseInt(amounttotransfer)
+                }
+            })
+            let Data=[];
+            const transactionDetails = localStorage.getItem("transactionDetails")
+            if (transactionDetails) {
+                Data = JSON.parse(transactionDetails)
+            }
+            const obj = {}
+            obj.from=fromemail
+            obj.to=toname
+            obj.amount=parseInt(amounttotransfer)
+            obj.time=new Date()
+            Data.push(obj)
+            localStorage.setItem("transactionDetails",JSON.stringify(Data))
+            localStorage.setItem("customerDetails", JSON.stringify(customers))
+        }
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <div id="landingpage">
+        <div id="users">
+            <select id="custmerselect">
+                <option value="0">select users</option>
+                <option value="Don">Don</option>
+                <option value="Melissa">Melissa</option>
+                <option value="rahulmmm">rahulmmm</option>
+                <option value="gavya1234s">gavya1234s</option>
+                <option value="manyaf1324">manyaf1324</option>
+                <option value="anganathlakshmi22">ranganathlakshmi22</option>
+                <option value="navanithrn2122">navanithrn2122</option>
+                <option value="harshankn2022">harshankn2022</option>
+                <option value="chethandtalastara">chethandtalastara</option>
+
+            </select>
+        </div>
+
+        <form action="javascript: void(0)" onsubmit="transfer()">
+            <input type="number" id="money" placeholder="enter money">
+            <button type="submit" id="submit">submit</button>
+       </form>
+
+        <div id="buttonsection">
+    
+            <button onclick="location.href='index1.html'" type="button" id="home">Home</button>
+            
+        <div>
+          <button onclick="location.href='index2.html'" type="button" id="customers">View customers</button>
+        </div>
+    </div>
+</body>
+
+</html>
