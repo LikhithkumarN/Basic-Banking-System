@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>customers</title>
+
+
+</head>
+
+<body>
+
+    <div id="landingpage">
+
+        <div id="buttonsection">
+
+            <button onclick="location.href='index1.html'" type="button" id="home">Home</button>
+            <button onclick="location.href='index4.html'" type="button" id="history">Transaction history</button>
+        
+        </div>
+
+
+        <table class="styled-table" id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>acount number</th>
+                    <th>email</th>
+                    <th>balance</th>
+                    <th>Transfer</th>
+
+                </tr>
+            </thead>
+
+
+
+            <tbody>
+                <script>
+                    const customerDetails = [
+                        {
+                            name: "Don",
+                            acnum: "6405432017",
+                            email: "kavyaggg@gamil.com",
+                            balance: 6000,
+                        },
+                        {
+                            name: "Melissa",
+                            acnum: "5150",
+                            email: "karntfdg@gamil.com",
+                            balance: 5150,
+
+                        },
+                        {
+                            name: "rahulmmm",
+                            acnum: "6000",
+                            email: "rahulmmm@gamil.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: "gavya1234s",
+                            acnum: "6000",
+                            email: "gavya1234s@gamil.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: "manyaf1324",
+                            acnum: "6000",
+                            email: "manyaf1324@gamil.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: "ranganathlakshmi22",
+                            acnum: "6000",
+                            email: "ranganathlakshmi22@gmail.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: " navanithrn2122",
+                            acnum: "6000",
+                            email: "navanithrn2122@gamil.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: "harshankn2022",
+                            acnum: "6000",
+                            email: "harshankn2022@gamil.com",
+                            balance: 6000,
+
+                        },
+                        {
+                            name: "chethandtalastara",
+                            acnum: "6000",
+                            email: "chandrashekhartn2006@gamil.com",
+                            balance: 6000,
+
+                        },
+
+                    ]
+
+                    const table = document.getElementById("table")
+                    let Data = []
+                    const localcustomerDetails = localStorage.getItem("customerDetails")
+                    if (localcustomerDetails) {
+                        Data = JSON.parse(localcustomerDetails)
+                    } else {
+                        Data = customerDetails
+                        localStorage.setItem("customerDetails", JSON.stringify(customerDetails))
+                    }
+
+
+                    Data && Data?.map((customer) => {
+                        const tablerow = document.createElement("tr")
+                        const tablerowforname = document.createElement("td");
+                        tablerowforname.innerText = customer.name
+                        const tablerowforemail = document.createElement("td")
+                        tablerowforemail.innerText = customer.email;
+                        const tablerowforacnum = document.createElement("td")
+                        tablerowforacnum.innerText = customer.acnum;
+                        const tablerowforbalance = document.createElement("td")
+                        tablerowforbalance.innerText = customer.balance;
+                        const tablerowfortransferbutton = document.createElement("a")
+                        tablerowfortransferbutton.innerText = "transfer"
+                        tablerowfortransferbutton.type = "submit"
+                        tablerowfortransferbutton.href = `index3.html?email=${customer.email}`
+                        tablerow.appendChild(tablerowforname)
+                        tablerow.appendChild(tablerowforacnum)
+                        tablerow.appendChild(tablerowforemail)
+                        tablerow.appendChild(tablerowforbalance)
+                        tablerow.appendChild(tablerowfortransferbutton)
+                        table.appendChild(tablerow)
+                    })
+
+                </script>
+
+            </tbody>
+        </table>
+
+
+    </div>
+
+</body>
+
+</html>
